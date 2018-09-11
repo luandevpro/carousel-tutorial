@@ -15,7 +15,8 @@ export default class Carousel extends Component {
       console.log(carouselViewport)
       var numOfSlidesToScroll = 4;
       var widthToScroll = 328
-      var newPos = carouselViewport.scrollLeft + widthToScroll * numOfSlidesToScroll;
+      // var newPos = carouselViewport.scrollLeft + widthToScroll * numOfSlidesToScroll;
+      var newPos = carouselViewport.scrollLeft + carouselViewport.offsetWidth;
       var timeToMoveOneSlide = 300;
       var totalTimeMove = numOfSlidesToScroll * timeToMoveOneSlide;
       scrollTo(carouselViewport, newPos , totalTimeMove ,"scrollLeft")

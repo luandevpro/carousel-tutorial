@@ -13,9 +13,9 @@
 }
 
 
-.carousel-viewport::-webkit-scrollbar {
+/* .carousel-viewport::-webkit-scrollbar {
    display: none;
-}
+} */
 
 .carousel-nav {
    opacity: .8;

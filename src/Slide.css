@@ -1,7 +1,7 @@
 .slide {
    display: inline-block;
    height: 50px;
-   width: 328px;
+   width: 230px;
    border: 1px solid black;
    white-space: normal;
 }
