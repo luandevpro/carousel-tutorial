@@ -20,7 +20,7 @@ class Carousel extends Component {
       return numItems - Math.abs(itemIndex - position)
     }
     return itemIndex - position
-  }
+  } 
   nextSlide = () => {
     const { position } = this.state
     const { children } = this.props
