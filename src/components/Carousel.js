@@ -8,29 +8,10 @@ export default class Carousel extends Component {
 
    }
    handleLeftNav(e){
-      console.log("ngng")
+      console.log("handleLeftNav")
    }
    handleRightNav = (e) => {
-      var {carouselViewport} = this.refs;
-      console.log(carouselViewport)
-      var numOfSlidesToScroll = 4;
-      var widthToScroll = 218
-      // var newPos = carouselViewport.scrollLeft + widthToScroll * numOfSlidesToScroll;
-      var newPos = carouselViewport.scrollLeft + carouselViewport.offsetWidth;
-      var timeToMoveOneSlide = 300;
-      var totalTimeMove = numOfSlidesToScroll * timeToMoveOneSlide;
-      scrollTo(carouselViewport, newPos , totalTimeMove ,"scrollLeft")
-   }
-   handleLeftNav = (e) => {
-    var {carouselViewport} = this.refs;
-    console.log(carouselViewport)
-    var numOfSlidesToScroll = 4;
-    var widthToScroll = 218
-    var newPos = carouselViewport.scrollLeft - widthToScroll * numOfSlidesToScroll;
-    // var newPos = carouselViewport.scrollLeft - carouselViewport.offsetWidth;
-    var timeToMoveOneSlide = 300;
-    var totalTimeMove = numOfSlidesToScroll * timeToMoveOneSlide;
-    scrollTo(carouselViewport, newPos , totalTimeMove ,"scrollLeft")
+      console.log("handleRightNav")
  }
   render() {
     return (
