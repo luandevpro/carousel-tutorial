@@ -14,13 +14,24 @@ export default class Carousel extends Component {
       var {carouselViewport} = this.refs;
       console.log(carouselViewport)
       var numOfSlidesToScroll = 4;
-      var widthToScroll = 328
+      var widthToScroll = 218
       // var newPos = carouselViewport.scrollLeft + widthToScroll * numOfSlidesToScroll;
       var newPos = carouselViewport.scrollLeft + carouselViewport.offsetWidth;
       var timeToMoveOneSlide = 300;
       var totalTimeMove = numOfSlidesToScroll * timeToMoveOneSlide;
       scrollTo(carouselViewport, newPos , totalTimeMove ,"scrollLeft")
    }
+   handleLeftNav = (e) => {
+    var {carouselViewport} = this.refs;
+    console.log(carouselViewport)
+    var numOfSlidesToScroll = 4;
+    var widthToScroll = 218
+    var newPos = carouselViewport.scrollLeft - widthToScroll * numOfSlidesToScroll;
+    // var newPos = carouselViewport.scrollLeft - carouselViewport.offsetWidth;
+    var timeToMoveOneSlide = 300;
+    var totalTimeMove = numOfSlidesToScroll * timeToMoveOneSlide;
+    scrollTo(carouselViewport, newPos , totalTimeMove ,"scrollLeft")
+ }
   render() {
     return (
       <div className="carousel-container">

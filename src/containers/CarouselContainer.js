@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import Carousel from '../Carousel';
-import Slide from "./../Slide"
+import Carousel from '../components/Carousel';
+import Slide from "../components/Slide"
 import data from "./../data.json"
 
 export default class CarouselContainer extends Component {
