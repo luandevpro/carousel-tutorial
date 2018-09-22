@@ -1,7 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import CarouselContainer from "./containers/CarouselContainer"
+import CarouselContainer from "./containers/CarouselContainer";
+import "./components/Carousel.css";
+import registerServiceWorker from './registerServiceWorker';
 
-import "./components/Carousel.css"
 ReactDOM.render(<CarouselContainer />, document.getElementById('root'));
+registerServiceWorker();
